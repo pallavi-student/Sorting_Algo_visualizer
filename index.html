@@ -6,11 +6,52 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Sorting Visualization</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<style>
+        /* Optional: Enhanced styling */
+        .chatbot-container {
+			background-image:url("website_background.webp") ;
+	background-repeat: no-repeat;
+	background-size: cover;
+            text-align: center;
+            margin-top: 10px;
+            background-color: black;
+            color: white; /* Set text color to white for contrast */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Add a subtle shadow */
+            max-width: 400px; /* Limit width for better readability */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .chatbot-container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .chatbot-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .chatbot-container button:hover {
+            background-color: #45a049; /* Darken the button on hover */
+        }
+    </style>
+	
 </head>
 
 <body>
 	<div class="header">
-		<h1>Pallavi Sorting Visualizer</h1>
+		<h1 style="color: bisque;">Welcome to the Pallavi's Sorting Visualizer</h1>
+		
+       
 		<div class="vars">
 			<div class="range">
 				<div class="slide"><label for="bars">ِArray Size</label> : <input id="bars" type="range" name="bars"
@@ -33,6 +74,25 @@
 	</div>
 	<div id="container">
 	</div>
+	<br>
+	<br>
+	<p style="font-size: larger; color:black;">You can use the chatbot for programming queries or to stay up-to-date with the latest technology news.</p>
+	<!-- Chatbot Inquiry Container -->
+    <!-- Chatbot Inquiry Container -->
+    <div class="chatbot-container">
+		<h1 style="color: antiquewhite;">Would you like to use our chatbot?</h1>
+		<button id="yesButton">Yes</button>
+		<button id="noButton">No</button>
+	</div>
+	
+	<!-- JavaScript to open the chatbot HTML -->
+	<script>
+		document.getElementById('yesButton').addEventListener('click', function() {
+			// Open the chatbot HTML in a new window or tab
+			window.open('https://mediafiles.botpress.cloud/796908d2-2579-4197-bb89-0682b2cb7483/webchat/bot.html', '_blank');
+		});
+	</script>
+	
 	<script src="beep.js"></script>
 	<script src="script.js"></script>
 </body>

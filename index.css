@@ -1,10 +1,22 @@
 *{
 	margin: 0;
+	
 }
 @font-face {
     font-family: "Pacifico";
     src: url("Fonts/Pacifico-Regular.woff2") format('woff2');
 }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 
 #container{
 	display: flex;
@@ -39,6 +51,9 @@ width: -webkit-max-content;
 	color: white;
 	padding: 1vw 1vw 2vw 1vw;
 	margin-bottom: 2vw;
+	background-image:url("website_background.webp") ;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 h1{
 	font-size: 3vw;
@@ -60,7 +75,9 @@ h1{
 	border: 0.05vw solid black;
 	width:0.6vw;
 	margin:0.1vw;
-	background-color: #fd0081;
+	background-color: #00fd3b;
+	forced-color-adjust: initial;
+	
 }
 .sorts{
 	display: flex;
@@ -95,4 +112,40 @@ input[type="button"], button{
 	min-width: 8vw;
 	color: rgb(6, 6, 223);
 	font-size: 1.2vw;
+}
+.chatbot-container {
+    width: 80%;
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#bp-web-widget-container {
+    width: 80%;
+    margin-top: 20px;
 }
